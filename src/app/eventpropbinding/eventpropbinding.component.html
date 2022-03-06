@@ -1,0 +1,14 @@
+<p>Two-way binding:
+<input [ngModel]="montexte"
+       (ngModelChange)="montexte=$event" type="text"/></p>
+
+Two-way binding:
+<input [(ngModel)]="montexte" type="text"/>
+<p>
+Tracks the value from the component:
+<input [ngModel]="montexte" type="text"/></p>
+
+<p>Binding classique:
+  <input type="text" value="{{montexte}}"></p>
+
+<button (click)="montexte='JF'" >JF</button>

@@ -1,0 +1,10 @@
+
+<p>Heroes:</p>
+<div *ngFor="let e of heroes">
+  <div *ngIf="e.includes('man')">Hero: {{ e }}</div>
+</div>
+
+<ng-template ngIf='true'>
+  <p>I am the content to show</p>
+</ng-template>
+
